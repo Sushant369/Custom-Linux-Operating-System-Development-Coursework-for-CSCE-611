@@ -1,0 +1,559 @@
+00000000000i[      ] Bochs x86 Emulator 2.6.11
+00000000000i[      ]   Built from SVN snapshot on January 5, 2020
+00000000000i[      ]   Timestamp: Sun Jan  5 08:36:00 CET 2020
+00000000000i[      ] System configuration
+00000000000i[      ]   processors: 1 (cores=1, HT threads=1)
+00000000000i[      ]   A20 line support: yes
+00000000000i[      ] IPS is set to 4000000
+00000000000i[      ] CPU configuration
+00000000000i[      ]   SMP support: yes, quantum=16
+00000000000i[      ]   level: 6
+00000000000i[      ]   APIC support: xapic
+00000000000i[      ]   FPU support: yes
+00000000000i[      ]   MMX support: yes
+00000000000i[      ]   3dnow! support: no
+00000000000i[      ]   SEP support: yes
+00000000000i[      ]   SIMD support: sse2
+00000000000i[      ]   XSAVE support: no 
+00000000000i[      ]   AES support: no
+00000000000i[      ]   SHA support: no
+00000000000i[      ]   MOVBE support: no
+00000000000i[      ]   ADX support: no
+00000000000i[      ]   x86-64 support: yes
+00000000000i[      ]   1G paging support: no
+00000000000i[      ]   MWAIT support: yes
+00000000000i[      ]   VMX support: 1
+00000000000i[      ]   SVM support: no
+00000000000i[      ] Optimization configuration
+00000000000i[      ]   RepeatSpeedups support: yes
+00000000000i[      ]   Fast function calls: yes
+00000000000i[      ]   Handlers Chaining speedups: no
+00000000000i[      ] Devices configuration
+00000000000i[      ]   PCI support: i440FX i430FX i440BX
+00000000000i[      ]   Networking support: NE2000 E1000
+00000000000i[      ]   Sound support: SB16 ES1370
+00000000000i[      ]   USB support: UHCI OHCI EHCI xHCI
+00000000000i[      ]   VGA extension support: vbe cirrus voodoo
+00000000000i[MEM0  ] allocated memory at 0x7f02d35e3010. after alignment, vector=0x7f02d35e4000
+00000000000i[MEM0  ] 32.00MB
+00000000000i[MEM0  ] mem block size = 0x00020000, blocks=256
+00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('BIOS-bochs-latest')
+00000000000i[      ] lt_dlhandle is 0x562ed6317140
+00000000000i[PLUGIN] loaded plugin libbx_hdimage.so
+00000000000i[      ] lt_dlhandle is 0x562ed6957ea0
+00000000000i[PLUGIN] loaded plugin libbx_soundalsa.so
+00000000000i[WAVOUT] ALSA: opened default PCM output device
+00000000000i[WAVOUT] changed sample rate to 44101
+00000000000i[      ] lt_dlhandle is 0x562ed6972510
+00000000000i[PLUGIN] loaded plugin libbx_pci.so
+00000000000i[      ] lt_dlhandle is 0x562ed6958a40
+00000000000i[PLUGIN] loaded plugin libbx_pci2isa.so
+00000000000i[      ] lt_dlhandle is 0x562ed6980030
+00000000000i[PLUGIN] loaded plugin libbx_usb_uhci.so
+00000000000i[      ] lt_dlhandle is 0x562ed69826f0
+00000000000i[PLUGIN] loaded plugin libbx_acpi.so
+00000000000i[      ] lt_dlhandle is 0x562ed6982f20
+00000000000i[PLUGIN] loaded plugin libbx_hpet.so
+00000000000i[      ] lt_dlhandle is 0x562ed6983d90
+00000000000i[PLUGIN] loaded plugin libbx_cmos.so
+00000000000i[      ] lt_dlhandle is 0x562ed69846f0
+00000000000i[PLUGIN] loaded plugin libbx_dma.so
+00000000000i[      ] lt_dlhandle is 0x562ed6985140
+00000000000i[PLUGIN] loaded plugin libbx_pic.so
+00000000000i[      ] lt_dlhandle is 0x562ed69859a0
+00000000000i[PLUGIN] loaded plugin libbx_pit.so
+00000000000i[      ] lt_dlhandle is 0x562ed69863a0
+00000000000i[PLUGIN] loaded plugin libbx_vga.so
+00000000000i[      ] lt_dlhandle is 0x562ed6986c00
+00000000000i[PLUGIN] loaded plugin libbx_floppy.so
+00000000000i[      ] lt_dlhandle is 0x562ed69877b0
+00000000000i[PLUGIN] loaded plugin libbx_ioapic.so
+00000000000i[      ] lt_dlhandle is 0x562ed6987fb0
+00000000000i[PLUGIN] loaded plugin libbx_keyboard.so
+00000000000i[      ] lt_dlhandle is 0x562ed6988780
+00000000000i[PLUGIN] loaded plugin libbx_harddrv.so
+00000000000i[      ] lt_dlhandle is 0x562ed698a9e0
+00000000000i[PLUGIN] loaded plugin libbx_pci_ide.so
+00000000000i[PLUGIN] init_dev of 'pci' plugin device by virtual method
+00000000000i[DEV   ] i440FX PMC present at device 0, function 0
+00000000000i[PLUGIN] init_dev of 'pci2isa' plugin device by virtual method
+00000000000i[DEV   ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
+00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
+00000000000i[CMOS  ] Using specified time for initial clock
+00000000000i[CMOS  ] Setting initial clock to: Fri Dec 31 17:00:00 1999 (time0=946681200)
+00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
+00000000000i[DMA   ] channel 4 used by cascade
+00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'pit' plugin device by virtual method
+00000000000i[PIT   ] PIT using realtime synchronisation method
+00000000000i[PLUGIN] init_dev of 'vga' plugin device by virtual method
+00000000000i[MEM0  ] Register memory access handlers: 0x0000000a0000 - 0x0000000bffff
+00000000000i[VGA   ] interval=200000, mode=realtime
+00000000000i[VGA   ] VSYNC using realtime mode
+00000000000i[MEM0  ] Register memory access handlers: 0x0000e0000000 - 0x0000e0ffffff
+00000000000i[BXVGA ] VBE Bochs Display Extension Enabled
+00000000000i[XGUI  ] test_alloc_colors: 16 colors available out of 16 colors tried
+00000000000i[XGUI  ] font 8 wide x 16 high, display depth = 24
+00000000000i[MEM0  ] rom at 0xc0000/38400 ('VGABIOS-lgpl-latest')
+00000000000i[PLUGIN] init_dev of 'floppy' plugin device by virtual method
+00000000000i[DMA   ] channel 2 used by Floppy Drive
+00000000000i[FLOPPY] fd0: 'dev_kernel_grub.img' ro=0, h=2,t=80,spt=18
+00000000000i[FLOPPY] Using boot sequence floppy, none, none
+00000000000i[FLOPPY] Floppy boot signature check is enabled
+00000000000i[PLUGIN] init_dev of 'acpi' plugin device by virtual method
+00000000000i[DEV   ] ACPI Controller present at device 1, function 3
+00000000000i[PLUGIN] init_dev of 'hpet' plugin device by virtual method
+00000000000i[HPET  ] initializing HPET
+00000000000i[MEM0  ] Register memory access handlers: 0x0000fed00000 - 0x0000fed003ff
+00000000000i[PLUGIN] init_dev of 'ioapic' plugin device by virtual method
+00000000000i[IOAPIC] initializing I/O APIC
+00000000000i[MEM0  ] Register memory access handlers: 0x0000fec00000 - 0x0000fec00fff
+00000000000i[IOAPIC] IOAPIC enabled (base address = 0xfec00000)
+00000000000i[PLUGIN] init_dev of 'keyboard' plugin device by virtual method
+00000000000i[KBD   ] will paste characters every 400 keyboard ticks
+00000000000i[PLUGIN] init_dev of 'harddrv' plugin device by virtual method
+00000000000i[HD    ] HD on ata0-0: 'c.img', 'flat' mode
+00000000000i[IMG   ] hd_size: 10653696
+00000000000i[HD    ] ata0-0: using specified geometry: CHS=306/4/17 (sector size=512)
+00000000000i[HD    ] HD on ata0-1: 'd.img', 'flat' mode
+00000000000i[IMG   ] hd_size: 10653696
+00000000000i[HD    ] ata0-1: using specified geometry: CHS=306/4/17 (sector size=512)
+00000000000i[HD    ] translation on ata0-0 set to 'none'
+00000000000i[HD    ] translation on ata0-1 set to 'none'
+00000000000i[PLUGIN] init_dev of 'pci_ide' plugin device by virtual method
+00000000000i[DEV   ] PIIX3 PCI IDE controller present at device 1, function 1
+00000000000i[PLUGIN] init_dev of 'unmapped' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'biosdev' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'speaker' plugin device by virtual method
+00000000000i[PCSPK ] Using lowlevel sound support for output
+00000000000i[PLUGIN] init_dev of 'extfpuirq' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'parallel' plugin device by virtual method
+00000000000i[PAR   ] parallel port 1 at 0x0378 irq 7
+00000000000i[PLUGIN] init_dev of 'serial' plugin device by virtual method
+00000000000i[SER   ] com1 at 0x03f8 irq 4 (mode: null)
+00000000000i[PLUGIN] init_dev of 'gameport' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'iodebug' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'usb_uhci' plugin device by virtual method
+00000000000i[DEV   ] USB UHCI present at device 1, function 2
+00000000000i[UHCI  ] USB UHCI initialized
+00000000000i[PLUGIN] register state of 'pci' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'pci2isa' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'cmos' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'dma' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'pic' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'pit' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'vga' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'floppy' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'unmapped' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'biosdev' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'speaker' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'extfpuirq' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'parallel' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'serial' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'gameport' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'iodebug' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'usb_uhci' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'acpi' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'hpet' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'ioapic' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'keyboard' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'harddrv' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'pci_ide' plugin device by virtual method
+00000000000i[SYS   ] bx_pc_system_c::Reset(HARDWARE) called
+00000000000i[CPU0  ] cpu hardware reset
+00000000000i[APIC0 ] allocate APIC id=0 (MMIO enabled) to 0x0000fee00000
+00000000000i[CPU0  ] CPU[0] is the bootstrap processor
+00000000000i[CPU0  ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00000000000i[CPU0  ] CPUID[0x00000001]: 00000633 00010800 00002028 1fcbfbff
+00000000000i[CPU0  ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00000000000i[CPU0  ] CPUID[0x80000000]: 80000008 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x80000001]: 00000000 00000000 00000101 2a100000
+00000000000i[CPU0  ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00000000000i[CPU0  ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00000000000i[CPU0  ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00000000000i[CPU0  ] CPUID[0x80000005]: 01ff01ff 01ff01ff 40020140 40020140
+00000000000i[CPU0  ] CPUID[0x80000006]: 00000000 42004200 02008140 00000000
+00000000000i[CPU0  ] CPUID[0x80000007]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x80000008]: 00003028 00000000 00000000 00000000
+00000000000i[CPU0  ] CPU Features supported:
+00000000000i[CPU0  ] 		x87
+00000000000i[CPU0  ] 		486ni
+00000000000i[CPU0  ] 		pentium_ni
+00000000000i[CPU0  ] 		p6ni
+00000000000i[CPU0  ] 		mmx
+00000000000i[CPU0  ] 		debugext
+00000000000i[CPU0  ] 		vme
+00000000000i[CPU0  ] 		pse
+00000000000i[CPU0  ] 		pae
+00000000000i[CPU0  ] 		pge
+00000000000i[CPU0  ] 		pse36
+00000000000i[CPU0  ] 		mtrr
+00000000000i[CPU0  ] 		pat
+00000000000i[CPU0  ] 		sysenter_sysexit
+00000000000i[CPU0  ] 		clflush
+00000000000i[CPU0  ] 		sse
+00000000000i[CPU0  ] 		sse2
+00000000000i[CPU0  ] 		mwait
+00000000000i[CPU0  ] 		vmx
+00000000000i[CPU0  ] 		longmode
+00000000000i[CPU0  ] 		lm_lahf_sahf
+00000000000i[CPU0  ] 		nx
+00000000000i[CPU0  ] 		cmpxhg16b
+00000000000i[CPU0  ] 		rdtscp
+00000000000i[CPU0  ] 		ffxsr
+00000000000i[CPU0  ] 		xapic
+00000000000i[PLUGIN] reset of 'pci' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'pci2isa' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'cmos' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'dma' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'pic' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'pit' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'vga' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'floppy' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'acpi' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'hpet' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'ioapic' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'keyboard' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'harddrv' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'pci_ide' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'unmapped' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'biosdev' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'speaker' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'extfpuirq' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'parallel' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'serial' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'gameport' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'iodebug' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'usb_uhci' plugin device by virtual method
+00000000000i[      ] set SIGINT handler to bx_debug_ctrlc_handler
+00000003302i[BIOS  ] $Revision: 1.209 $ $Date: 2008/06/02 20:08:10 $
+00000319052i[KBD   ] reset-disable command received
+00000439662i[VBIOS ] VGABios $Id: vgabios.c,v 1.67 2008/01/27 09:44:12 vruppert Exp $
+00000439733i[BXVGA ] VBE known Display Interface b0c0
+00000439765i[BXVGA ] VBE known Display Interface b0c4
+00000442690i[VBIOS ] VBE Bios $Id: vbe.c,v 1.60 2008/03/02 07:47:21 vruppert Exp $
+00000765691i[BIOS  ] Starting rombios32
+00000766518i[BIOS  ] ram_size=0x02000000
+00000778737i[BIOS  ] Found 1 cpu(s)
+00000795038i[BIOS  ] bios_table_addr: 0x000fb778 end=0x000fcc00
+00001253912i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
+00001713399i[P2ISA ] PCI IRQ routing: PIRQA# set to 0x0b
+00001713446i[P2ISA ] PCI IRQ routing: PIRQB# set to 0x09
+00001713493i[P2ISA ] PCI IRQ routing: PIRQC# set to 0x0b
+00001713540i[P2ISA ] PCI IRQ routing: PIRQD# set to 0x09
+00001713556i[P2ISA ] write: ELCR2 = 0x0a
+00001714493i[BIOS  ] PIIX3 init: elcr=00 0a
+00001734838i[BIOS  ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237
+00001736180i[BIOS  ] region 6: 0x00000000
+00001739067i[BIOS  ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000
+00001740409i[BIOS  ] region 6: 0x00000000
+00001742792i[BIOS  ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010
+00001744088i[BIOS  ] region 4: 0x00000000
+00001745201i[BIOS  ] region 6: 0x00000000
+00001747584i[BIOS  ] PCI: bus=0 devfn=0x0a: vendor_id=0x8086 device_id=0x7020
+00001748808i[BIOS  ] region 4: 0x00000000
+00001749921i[BIOS  ] region 6: 0x00000000
+00001750071i[UHCI  ] new IRQ line = 9
+00001752343i[BIOS  ] PCI: bus=0 devfn=0x0b: vendor_id=0x8086 device_id=0x7113
+00001753685i[BIOS  ] region 6: 0x00000000
+00001753835i[ACPI  ] new IRQ line = 11
+00001753872i[ACPI  ] new PM base address: 0xb000
+00001753934i[ACPI  ] new SM base address: 0xb100
+00001754402i[CPU0  ] Enter to System Management Mode
+00001754402i[CPU0  ] enter_system_management_mode: temporary disable VMX while in SMM mode
+00001754412i[CPU0  ] RSM: Resuming from System Management Mode
+00001754446i[PCI   ] setting SMRAM control register to 0x4a
+00001754728i[PCI   ] setting SMRAM control register to 0x0a
+00001778009i[BIOS  ] MP table addr=0x000fb850 MPC table addr=0x000fb780 size=0xd0
+00001780212i[BIOS  ] SMBIOS table addr=0x000fb860
+00001783256i[BIOS  ] ACPI tables: RSDP addr=0x000fb970 ACPI DATA addr=0x01ff0000 size=0x9d8
+00001802789i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
+00001803801i[BIOS  ] bios_table_cur_addr: 0x000fb994
+00001881710i[BIOS  ] ata0-0: PCHS=306/4/17 translation=none LCHS=306/4/17
+00001939888i[BIOS  ] ata0-1: PCHS=306/4/17 translation=none LCHS=306/4/17
+00130188624i[XGUI  ] charmap update. Font is 9 x 16
+03111819571i[BIOS  ] Booting from 0000:7c00
+03121475385i[XGUI  ] charmap update. Font is 9 x 16
+03128178891i[XGUI  ] charmap update. Font is 9 x 16
+03288868116i[XGUI  ] charmap update. Font is 9 x 16
+03298268927i[XGUI  ] charmap update. Font is 9 x 16
+03300443866e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300443903e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300443940e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300443977e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444014e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444051e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444088e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444125e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444162e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444199e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444236e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444273e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444310e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444347e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444384e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444421e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444458e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444495e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444532e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444569e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444606e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444643e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444680e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444717e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444754e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444791e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444828e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444865e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444902e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444939e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300444976e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445013e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445050e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445087e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445124e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445161e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445198e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445235e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445272e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445309e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445346e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445383e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445420e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445457e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445494e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445531e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445568e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445605e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445642e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445679e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445716e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445753e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445790e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445827e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445864e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445901e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445938e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300445975e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446012e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446049e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446086e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446123e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446160e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446197e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446234e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446271e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446308e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446345e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446382e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446419e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446456e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446493e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446530e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446567e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446604e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446641e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446678e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446715e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446752e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446789e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446826e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446863e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446900e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446937e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300446974e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447011e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447048e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447085e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447122e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447159e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447196e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447233e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447270e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447307e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447344e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447381e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447418e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447455e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447492e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447529e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447566e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447603e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447640e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447677e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447714e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447751e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447788e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447825e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447862e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447899e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447936e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300447973e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448010e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448047e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448084e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448121e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448158e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448195e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448232e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448269e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448306e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448343e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448380e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448417e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448454e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448491e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448528e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448565e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448602e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448639e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448676e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448713e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448750e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448787e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448824e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448861e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448898e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448935e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300448972e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449009e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449046e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449083e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449120e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449157e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449194e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449231e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449268e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449305e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449342e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449379e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449416e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449453e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449490e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449527e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449564e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449601e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449638e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449675e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449712e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449749e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449786e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449823e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449860e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449897e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449934e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300449971e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450008e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450045e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450082e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450119e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450156e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450193e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450230e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450267e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450304e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450341e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450378e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450415e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450452e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450489e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450526e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450563e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450600e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450637e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450674e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450711e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450748e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450785e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450822e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450859e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450896e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450933e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300450970e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451007e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451044e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451081e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451118e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451155e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451192e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451229e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451266e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451303e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451340e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451377e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451414e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451451e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451488e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451525e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451562e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451599e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451636e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451673e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451710e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451747e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451784e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451821e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451858e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451895e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451932e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300451969e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452006e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452043e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452080e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452117e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452154e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452191e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452228e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452265e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452302e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452339e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452376e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452413e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452450e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452487e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452524e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452561e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452598e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452635e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452672e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452709e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452746e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452783e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452820e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452857e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452894e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452931e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300452968e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300453005e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300453042e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300453079e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300453116e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300453153e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300453190e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300453227e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300453264e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03300453301e[HD    ] IO read(0x01f0) with drq == 0: last command was 20h
+03518536000p[XGUI  ] >>PANIC<< POWER button turned off.
+03518536000i[CPU0  ] CPU is in protected mode (active)
+03518536000i[CPU0  ] CS.mode = 32 bit
+03518536000i[CPU0  ] SS.mode = 32 bit
+03518536000i[CPU0  ] EFER   = 0x00000000
+03518536000i[CPU0  ] | EAX=000b8bf0  EBX=000b8000  ECX=000b8bf1  EDX=000b8c20
+03518536000i[CPU0  ] | ESP=00200fbc  EBP=00200fcc  ESI=00000000  EDI=00000000
+03518536000i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf zf af PF cf
+03518536000i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
+03518536000i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+03518536000i[CPU0  ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+03518536000i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+03518536000i[CPU0  ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+03518536000i[CPU0  ] |  FS:0000( 0000| 0|  0) 00000000 00000000 0 0
+03518536000i[CPU0  ] |  GS:0000( 0000| 0|  0) 00000000 00000000 0 0
+03518536000i[CPU0  ] | EIP=001001fe (001001fe)
+03518536000i[CPU0  ] | CR0=0x60000011 CR2=0x00000000
+03518536000i[CPU0  ] | CR3=0x00000000 CR4=0x00000000
+03518536000i[CMOS  ] Last time is 946682079 (Fri Dec 31 17:14:39 1999)
+03518536000i[XGUI  ] Exit
+03518536000i[SIM   ] quit_sim called with exit code 1

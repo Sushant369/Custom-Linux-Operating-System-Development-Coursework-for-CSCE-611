@@ -1,0 +1,9 @@
+make
+./copykernel.sh
+bochs -f bochsrc.bxrc
+
+
+linker.ld updated
+
+removed below line
+OUTPUT_FORMAT("binary")
